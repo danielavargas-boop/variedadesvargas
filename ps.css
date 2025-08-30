@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Negrita para títulos */
+    color: #000; /* o el color que ya estás usando */
+  }
+/* Aplica Poppins en todo el navbar */
+.navbar, 
+.navbar .navbar-brand,
+.navbar .navbar-brand span,
+.navbar .nav-link,
+.navbar .navbar-toggler {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Semi-bold para textos del menú */
+  color: #000; /* Color negro */
+}
+
+/* Marca con peso bold y tamaño un poco mayor */
+.navbar .navbar-brand span {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* Links del menú */
+.navbar .nav-link {
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+
+  /*Bienvenida*/
+.bienvenida{
+  text-align: center;
+  padding: 40px 20px 20px;
+margin: 20px auto;
+max-width: 700px;
+font-family: 'Poppins', sans-serif;
+color: #333; /* tono marrón dorado para texto */
+}
+
+.bienvenida h1 {
+font-size: 2.2rem;
+color: #b8860b;
+margin-bottom: 10px;
+}
+
+.bienvenida p {
+font-size: 1.1rem;
+color: #444;
+line-height: 1.6;
+}
+
+
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+/*IMAGEN DENTRO DE LA CARD*/
+.card img {
+  object-fit: cover;
+width: 100%; /*Hace que la imagen ocupe todo el ancho*/
+height: auto; /*Mantiene la porcion*/
+display: block; /*Elimina espacios indeseados debajo de la imagen*/
+}
+
+/*texto y boton*/
+.card h3,
+.card p {
+margin: 15px;
+color: #b97676;
+    margin: 0 15px 15px 15px;
+    color: #555;
+}
+
+
+
+/*Introduccion*/
+.seccion-sobre-nosotros {
+  width: 100%;
+}
+
+.sobre-nosotros {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contenedor-nosotros {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre-nosotros h2 {
+  font-size: 2.5em;
+  color: #b8860b; /* Dorado */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sobre-nosotros p {
+  font-size: 1.2em;
+  color: #111111;
+  line-height: 1.7;
+}
+
+.btn{
+  display: block;
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+  background: #b8860b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background: #b8860b;
+  }
+
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    min-width: 180px;
+  }
+  
+  .footer-section h3,
+  .footer-section h4 {
+    color: #b8860b;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 6px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #b8860b;
+    text-decoration: underline;
+  }
+  
+  /* Redes sociales */
+  .redes-sociales a {
+    margin-right: 10px;
+    font-size: 1.3em;
+    color: #ddd;
+    transition: color 0.3s ease;
+  }
+  
+  .redes-sociales a:hover {
+    color: #b8860b;
+  }
+  
+  /* Línea inferior */
+  .footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    color: #aaa;
+  }
+  
+  .footer-bottom a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #b8860b;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      background-color: #fff;
+      padding: 10px;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-nav .nav-link {
+      font-weight: 600;
+      color: #b8860b !important;
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-link:hover {
+      color: #000 !important;
+    }
+  }
+
+  .modal-content {
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  color: #b8860b;
+}
+
+#tallaSeleccionada {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.agregar-carrito-modal {
+  background-color: #b8860b;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.agregar-carrito-modal:hover {
+  background-color: #a6760a;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+.entrega-titulo {
+  font-size: 2rem;
+  color: #b8860b;
+  font-weight: bold;
+}
+
+.entrega-texto {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Aliados */
+h2 {
+  font-weight: bold;
+  color: #b8860b;
+}
+
+.aliado-card {
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  height: 100%;
+  text-align: center;
+}
+
+.aliado-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.empresas-aliadas a {
+  color: #333;
+  text-decoration: none;
+}
+
+.empresas-aliadas a:hover {
+  text-decoration: underline;
+}
+
+.empresas-aliadas {
+  background-color: #f9f9f9;
+  padding: 3rem 0;
+}
+
+.empresas-aliadas i {
+  color: #b8860b;
+}
+
+.whatsapp-btn {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #25D366; 
+  color: white; 
+  border: none; 
+  border-radius: 50%;
+  width: 60px; 
+  height: 60px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 28px; 
+  cursor: pointer; 
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.2); 
+  transition: all 0.3s ease; 
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+  background-color: gold; 
+  color: black; 
+  transform: scale(1.1);
+}
+
+/* Fondo especial para la página de servicios */
+.fondo-servicios {
+    background-color: #fef6e4; /* Color pálido de respaldo */
+    background-image: url('imagenes/fondo-servicios.jpg'); /* Cambia por tu ruta real */
+    background-size: cover;       /* Que cubra toda la pantalla */
+    background-position: center;  /* Centrada */
+    background-repeat: no-repeat; /* Que no se repita */
+    background-attachment: fixed; /* Fondo fijo */
+    min-height: 100vh;             /* Asegura que cubra todo el alto */
+}
+
+.fundadores-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fundadores-texto {
+  flex: 1 1 300px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.fundadores-texto h3 {
+  font-weight: 700;
+  color: #b8860b;
+  margin-bottom: 10px;
+}
+
+.fundadores-texto p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+/* Contenedor para centrar y dar espacio a la foto */
+.foto-fundadores {
+    display: flex;              /* Usa flexbox para control de alineación */
+    justify-content: flex-start;/* Alinea la imagen al lado izquierdo */
+    align-items: center;        /* Centra verticalmente la imagen */
+    padding: 20px;              /* Espacio interno alrededor */
+}
+
+/* Estilo para la imagen circular */
+.foto-fundadores img {
+    width: 200px;               /* Tamaño de la imagen */
+    height: 200px;              /* Igual que el ancho para mantener la forma */
+    border-radius: 50%;         /* Convierte la imagen en un círculo */
+    object-fit: cover;          /* Recorta para que se mantenga la proporción */
+    border: 4px solid gold;     /* Borde dorado elegante */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra suave */
+}
