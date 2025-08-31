@@ -125,42 +125,29 @@
 </head>
 
 <body>
-  <!-- Barra de navegación con Bootstrap -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <!-- Link del logo y nombre, que apunta a index.html -->
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <!-- Imagen del logo -->
-      <img src="LOGOO.png" width="25" height="15" alt="Logo" />
-      <!-- Texto del logo con espacio a la izquierda (ml-2 es margin-left) -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="LOGOO.png" width="25" height="25" alt="Logo" />
       <span class="ml-2 font-weight-bold">Variedades Vargas</span>
     </a>
 
-    <!-- Botón hamburguesa para pantallas pequeñas -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"   <!-- Atributo Bootstrap para colapsar el menú -->
-      data-target="#menuPrincipal" <!-- Elemento que controla el colapso -->
-      aria-controls="menuPrincipal" <!-- Accesibilidad, indica qué controla -->
-      aria-expanded="false" <!-- Estado inicial cerrado -->
-      aria-label="Toggle navigation" <!-- Texto para lectores de pantalla -->
-    >
-      <span class="navbar-toggler-icon"></span> <!-- Icono del botón -->
+    <!-- Botón hamburguesa -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal"
+            aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars fa-lg"></i>
     </button>
 
-    <!-- Contenedor colapsable del menú -->
     <div class="collapse navbar-collapse" id="menuPrincipal">
       <ul class="navbar-nav ml-auto">
-        <!-- Enlaces del menú -->
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item active"><a class="nav-link" href="index.html">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
         <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-         
-        <li class="nav-item active"><a class="nav-link" href="nosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
       </ul>
     </div>
   </nav>
-
+    
 <!-- Contenedor principal de la foto circular -->
 <div class="foto-fundadores">
     <!-- Imagen de los fundadores -->
@@ -235,4 +222,5 @@
 </footer>
 
 </body>
+
 </html>
